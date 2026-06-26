@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contratista y Acabado | Reparaciones y Remodelaciones Profesionales</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#inicio" class="logo">
+                <i class="fas fa-hard-hat"></i>
+                <span>Contratista y Acabado</span>
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                <li><a href="#trabajos" class="nav-link">Trabajos Realizados</a></li>
+                <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-star"></i>
+                <span>Más de 10 años de experiencia</span>
+            </div>
+            <h1 class="hero-title">
+                Transformamos tus <span class="highlight">espacios</span><br>
+                con excelencia y precisión
+            </h1>
+            <p class="hero-subtitle">
+                Especialistas en reparaciones, remodelaciones y acabados de alta calidad.
+                Tu proyecto, nuestra pasión.
+            </p>
+            <div class="hero-buttons">
+                <a href="#contacto" class="btn btn-primary">
+                    <i class="fab fa-whatsapp"></i>
+                    Cotizar Ahora
+                </a>
+                <a href="#trabajos" class="btn btn-outline">
+                    Ver Trabajos
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Desplaza para explorar</span>
+        </div>
+    </section>
+
+    <!-- Estadísticas -->
+    <section class="stats-section">
+        <div class="stats-container">
+            <div class="stat-item" data-count="250">
+                <div class="stat-icon"><i class="fas fa-home"></i></div>
+                <div class="stat-number">0</div>
+                <div class="stat-label">Proyectos Completados</div>
+            </div>
+            <div class="stat-item" data-count="10">
+                <div class="stat-icon"><i class="fas fa-calendar-alt"></i></div>
+                <div class="stat-number">0</div>
+                <div class="stat-label">Años de Experiencia</div>
+            </div>
+            <div class="stat-item" data-count="98">
+                <div class="stat-icon"><i class="fas fa-smile"></i></div>
+                <div class="stat-number">0</div>
+                <div class="stat-label">% Clientes Satisfechos</div>
+            </div>
+            <div class="stat-item" data-count="24">
+                <div class="stat-icon"><i class="fas fa-clock"></i></div>
+                <div class="stat-number">0</div>
+                <div class="stat-label">Horas Soporte</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section class="services" id="servicios">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Nuestros Servicios</span>
+                <h2 class="section-title">¿Qué hacemos?</h2>
+                <p class="section-desc">Ofrecemos soluciones integrales para tu hogar o negocio</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Reparaciones Generales</h3>
+                    <p>Fontanería, electricidad, albañilería, pintura y todo tipo de reparaciones domésticas e industriales.</p>
+                    <a href="#contacto" class="service-link">Solicitar <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hammer"></i>
+                    </div>
+                    <h3>Remodelaciones</h3>
+                    <p>Transformación completa de cocinas, baños, habitaciones y espacios comerciales con diseño moderno.</p>
+                    <a href="#contacto" class="service-link">Solicitar <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-roller"></i>
+                    </div>
+                    <h3>Acabados de Lujo</h3>
+                    <p>Pisos, azulejos, mármol, granito, texturizados y acabados premium que elevan cualquier espacio.</p>
+                    <a href="#contacto" class="service-link">Solicitar <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Construcción</h3>
+                    <p>Ampliaciones, estructuras, muros, techos y proyectos de construcción desde cero con los mejores materiales.</p>
+                    <a href="#contacto" class="service-link">Solicitar <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bath"></i>
+                    </div>
+                    <h3>Baños y Cocinas</h3>
+                    <p>Diseño e instalación de baños y cocinas modernas, funcionales y con acabados de primera calidad.</p>
+                    <a href="#contacto" class="service-link">Solicitar <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Diseño de Interiores</h3>
+                    <p>Asesoría profesional en diseño interior para maximizar espacios y crear ambientes únicos.</p>
+                    <a href="#contacto" class="service-link">Solicitar <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trabajos Realizados -->
+    <section class="portfolio" id="trabajos">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portafolio</span>
+                <h2 class="section-title">Trabajos Realizados</h2>
+                <p class="section-desc">Resultados que hablan por sí solos</p>
+            </div>
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="remodelacion">Remodelaciones</button>
+                <button class="filter-btn" data-filter="reparacion">Reparaciones</button>
+                <button class="filter-btn" data-filter="acabado">Acabados</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="remodelacion">
+                    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop" alt="Remodelación de Cocina">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-info">
+                            <span class="portfolio-tag">Remodelación</span>
+                            <h3>Cocina Moderna</h3>
+                            <p>Remodelación completa con isla central y acabados en cuarzo</p>
+                            <button class="portfolio-btn" onclick="openLightbox(this)">
+                                <i class="fas fa-expand"></i> Ver Detalle
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="acabado">
+                    <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=600&h=400&fit=crop" alt="Baño de Lujo">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-info">
+                            <span class="portfolio-tag">Acabados</span>
+                            <h3>Baño de Lujo</h3>
+                            <p>Mármol italiano y grifería de diseño</p>
+                            <button class="portfolio-btn" onclick="openLightbox(this)">
+                                <i class="fas fa-expand"></i> Ver Detalle
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="reparacion">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&h=400&fit=crop" alt="Reparación Estructural">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-info">
+                            <span class="portfolio-tag">Reparación</span>
+                            <h3>Reparación Estructural</h3>
+                            <p>Refuerzo y reparación de estructura dañada</p>
+                            <button class="portfolio-btn" onclick="openLightbox(this)">
+                                <i class="fas fa-expand"></i> Ver Detalle
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="remodelacion">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop" alt="Sala Remodelada">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-info">
+                            <span class="portfolio-tag">Remodelación</span>
+                            <h3>Sala Contemporánea</h3>
+                            <p>Diseño abierto con iluminación natural</p>
+                            <button class="portfolio-btn" onclick="openLightbox(this)">
+                                <i class="fas fa-expand"></i> Ver Detalle
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="acabado">
+                    <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&h=400&fit=crop" alt="Pisos de Mármol">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-info">
+                            <span class="portfolio-tag">Acabados</span>
+                            <h3>Pisos de Mármol</h3>
+                            <p>Instalación de pisos de mármol Carrara</p>
+                            <button class="portfolio-btn" onclick="openLightbox(this)">
+                                <i class="fas fa-expand"></i> Ver Detalle
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="reparacion">
+                    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&h=400&fit=crop" alt="Pintura Profesional">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-info">
+                            <span class="portfolio-tag">Reparación</span>
+                            <h3>Pintura Profesional</h3>
+                            <p>Acabado impecable en interiores y exteriores</p>
+                            <button class="portfolio-btn" onclick="openLightbox(this)">
+                                <i class="fas fa-expand"></i> Ver Detalle
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="remodelacion">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&h=400&fit=crop" alt="Dormitorio Principal">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-info">
+                            <span class="portfolio-tag">Remodelación</span>
+                            <h3>Dormitorio Principal</h3>
+                            <p>Suite con vestidor y baño privado</p>
+                            <button class="portfolio-btn" onclick="openLightbox(this)">
+                                <i class="fas fa-expand"></i> Ver Detalle
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="acabado">
+                    <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=600&h=400&fit=crop" alt="Cocina Minimalista">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-info">
+                            <span class="portfolio-tag">Acabados</span>
+                            <h3>Cocina Minimalista</h3>
+                            <p>Acabados en mate con iluminación LED</p>
+                            <button class="portfolio-btn" onclick="openLightbox(this)">
+                                <i class="fas fa-expand"></i> Ver Detalle
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nosotros -->
+    <section class="about" id="nosotros">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="about-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&h=700&fit=crop" alt="Equipo de trabajo">
+                        <div class="about-experience">
+                            <span class="exp-number">10+</span>
+                            <span class="exp-text">Años de<br>Experiencia</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <span class="section-tag">Sobre Nosotros</span>
+                    <h2 class="section-title">Construimos confianza,<br>no solo estructuras</h2>
+                    <p class="about-text">
+                        En <strong>Contratista y Acabado</strong> nos especializamos en transformar espacios con 
+                        calidad, profesionalismo y atención al detalle. Cada proyecto es una oportunidad 
+                        para superar expectativas.
+                    </p>
+                    <p class="about-text">
+                        Contamos con un equipo de expertos certificados en albañilería, plomería, 
+                        electricidad, carpintería y diseño interior. Utilizamos materiales de primera 
+                        calidad y técnicas modernas para garantizar resultados duraderos.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Presupuestos sin compromiso</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Garantía en todos los trabajos</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Materiales de primera calidad</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Entrega puntual garantizada</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Testimonios</span>
+                <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card active">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Excelente trabajo en la remodelación de mi cocina. Quedó exactamente como la soñé. 
+                        El equipo fue muy profesional y respetuoso. ¡Totalmente recomendados!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MR</div>
+                        <div class="author-info">
+                            <h4>María Rodríguez</h4>
+                            <span>Remodelación de Cocina</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Contraté para reparar una filtración y terminaron haciendo todo el baño nuevo. 
+                        El acabado en mármol quedó espectacular. Precios justos y trabajo impecable."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">CG</div>
+                        <div class="author-info">
+                            <h4>Carlos Gómez</h4>
+                            <span>Reparación y Baño Nuevo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Muy satisfecho con la remodelación de mi oficina. Cumplieron con los tiempos 
+                        y el presupuesto acordado. El diseño interior superó mis expectativas."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">LP</div>
+                        <div class="author-info">
+                            <h4>Laura Pérez</h4>
+                            <span>Remodelación de Oficina</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto / WhatsApp -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <span class="section-tag">Contáctanos</span>
+                    <h2 class="section-title">¿Listo para transformar<br>tu espacio?</h2>
+                    <p class="contact-desc">
+                        Escríbenos por WhatsApp y recibe una cotización gratuita en minutos. 
+                        Estamos disponibles para atenderte.
+                    </p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span>WhatsApp</span>
+                                <a href="https://wa.me/1234567890?text=Hola%2C%20estoy%20interesado%20en%20un%20presupuesto%20para%20mi%20proyecto" target="_blank">+1 (234) 567-890</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span>Teléfono</span>
+                                <a href="tel:+1234567890">+1 (234) 567-890</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span>Email</span>
+                                <a href="mailto:info@contratistayacabado.com">info@contratistayacabado.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span>Ubicación</span>
+                                <span>Ciudad, País</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-social">
+                        <span>Síguenos:</span>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-cta">
+                    <div class="cta-card">
+                        <div class="cta-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h3>¡Cotiza Gratis por WhatsApp!</h3>
+                        <p>Responde en menos de 30 minutos. Sin compromiso.</p>
+                        <a href="https://wa.me/1234567890?text=Hola%2C%20estoy%20interesado%20en%20un%20presupuesto%20para%20mi%20proyecto" 
+                           target="_blank" 
+                           class="btn btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                            Enviar Mensaje
+                        </a>
+                        <div class="cta-features">
+                            <span><i class="fas fa-check"></i> Cotización gratuita</span>
+                            <span><i class="fas fa-check"></i> Respuesta rápida</span>
+                            <span><i class="fas fa-check"></i> Sin compromiso</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#inicio" class="footer-logo">
+                        <i class="fas fa-hard-hat"></i>
+                        <span>Contratista y Acabado</span>
+                    </a>
+                    <p>Transformando espacios con calidad, profesionalismo y pasión desde hace más de una década.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#servicios">Reparaciones</a></li>
+                        <li><a href="#servicios">Remodelaciones</a></li>
+                        <li><a href="#servicios">Acabados</a></li>
+                        <li><a href="#servicios">Construcción</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#trabajos">Portafolio</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Términos y Condiciones</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Contratista y Acabado. Todos los derechos reservados.</p>
+                <a href="#inicio" class="back-to-top" aria-label="Volver arriba">
+                    <i class="fas fa-arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" onclick="closeLightbox()">
+            <i class="fas fa-times"></i>
+        </button>
+        <img src="" alt="Imagen ampliada" id="lightboxImg">
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+
+    <!-- WhatsApp Flotante -->
+    <a href="https://wa.me/1234567890?text=Hola%2C%20estoy%20interesado%20en%20un%20presupuesto%20para%20mi%20proyecto" 
+       target="_blank" 
+       class="whatsapp-float" 
+       aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">¡Escríbenos!</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

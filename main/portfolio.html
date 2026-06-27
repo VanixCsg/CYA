@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio | Contratista y Acabado</title>
+    <title>Portafolio | Contratista y Acabado</title>zzzzzz
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,7 @@
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a href="../index.html" class="logo">
-                <i class="fas fa-hard-hat"></i>
+                <img src="../img/icon.png" alt="Contratista y Acabado" class="logo-img">
                 <span>Contratista y Acabado</span>
             </a>
             <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
@@ -39,93 +39,86 @@
                 <h2 class="section-title">Más trabajos realizados</h2>
                 <p class="section-desc">Aquí tienes una selección más amplia de proyectos completados en remodelaciones, reparaciones y acabados.</p>
             </div>
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="remodelacion">Remodelaciones</button>
+                <button class="filter-btn" data-filter="reparacion">Reparaciones</button>
+                <button class="filter-btn" data-filter="acabado">Acabados</button>
+            </div>
             <div class="portfolio-grid">
-                <div class="portfolio-item" data-category="remodelacion">
-                    <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&h=600&fit=crop" alt="Remodelación Exterior">
-                    <div class="portfolio-overlay">
-                        <div class="portfolio-info">
-                            <span class="portfolio-tag">Remodelación</span>
-                            <h3>Fachada Renovada</h3>
-                            <p>Remodelación exterior con pintura y nuevos acabados.</p>
-                            <button class="portfolio-btn" onclick="openLightbox(this)"><i class="fas fa-expand"></i> Ver Detalle</button>
-                        </div>
-                    </div>
-                </div>
                 <div class="portfolio-item" data-category="acabado">
-                    <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?w=800&h=600&fit=crop" alt="Acabado de lujo">
+                    <img src="../img/Trab/6.PNG" alt="Closet empotrado blanco con gavetas">
                     <div class="portfolio-overlay">
                         <div class="portfolio-info">
                             <span class="portfolio-tag">Acabados</span>
-                            <h3>Acabado Moderno</h3>
-                            <p>Texturizado y detalle en yeso para sala principal.</p>
-                            <button class="portfolio-btn" onclick="openLightbox(this)"><i class="fas fa-expand"></i> Ver Detalle</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="reparacion">
-                    <img src="https://images.unsplash.com/photo-1533495941368-0c6c6c96b87f?w=800&h=600&fit=crop" alt="Reparación de muro">
-                    <div class="portfolio-overlay">
-                        <div class="portfolio-info">
-                            <span class="portfolio-tag">Reparación</span>
-                            <h3>Muro Reforzado</h3>
-                            <p>Reparación estructural con refuerzo de hormigón.</p>
+                            <h3>Closet empotrado a medida</h3>
+                            <p>Fabricación e instalación de closet blanco con puertas de piso a techo y gavetas integradas.</p>
                             <button class="portfolio-btn" onclick="openLightbox(this)"><i class="fas fa-expand"></i> Ver Detalle</button>
                         </div>
                     </div>
                 </div>
                 <div class="portfolio-item" data-category="remodelacion">
-                    <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800&h=600&fit=crop" alt="Remodelación de oficina">
+                    <img src="../img/Trab/7.PNG" alt="Panel decorativo de madera acanalada con mesón de mármol">
                     <div class="portfolio-overlay">
                         <div class="portfolio-info">
                             <span class="portfolio-tag">Remodelación</span>
-                            <h3>Oficina Comercial</h3>
-                            <p>Rediseño de espacio comercial con acabado elegante.</p>
+                            <h3>Panel decorativo y mesón de mármol</h3>
+                            <p>Instalación de panel acanalado en madera, mesón de mármol y sistema de aire acondicionado en sala.</p>
                             <button class="portfolio-btn" onclick="openLightbox(this)"><i class="fas fa-expand"></i> Ver Detalle</button>
                         </div>
                     </div>
                 </div>
-                <div class="portfolio-item" data-category="acabado">
-                    <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&h=600&fit=crop" alt="Instalación de pisos">
+                <div class="portfolio-item" data-category="remodelacion">
+                    <img src="../img/Trab/8.PNG" alt="Gabinetes de cocina clásicos con puertas de vidrio y mesón de mármol">
                     <div class="portfolio-overlay">
                         <div class="portfolio-info">
-                            <span class="portfolio-tag">Acabados</span>
-                            <h3>Piso de alto impacto</h3>
-                            <p>Instalación de piso en porcelanato con acabado premium.</p>
+                            <span class="portfolio-tag">Remodelación</span>
+                            <h3>Gabinetes de cocina clásicos</h3>
+                            <p>Renovación de cocina con gabinetes altos de vidrio arqueado y mesón de mármol blanco.</p>
                             <button class="portfolio-btn" onclick="openLightbox(this)"><i class="fas fa-expand"></i> Ver Detalle</button>
                         </div>
                     </div>
                 </div>
                 <div class="portfolio-item" data-category="reparacion">
-                    <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=800&h=600&fit=crop" alt="Pintado interior">
+                    <img src="../img/Trab/9.PNG" alt="Pintura de fachada de edificio con andamio colgante">
                     <div class="portfolio-overlay">
                         <div class="portfolio-info">
                             <span class="portfolio-tag">Reparación</span>
-                            <h3>Pintura Interior</h3>
-                            <p>Trabajo de pintura con acabado impecable y duradero.</p>
+                            <h3>Pintura de fachada en altura</h3>
+                            <p>Trabajo de pintura exterior en fachada de edificio residencial con andamio colgante.</p>
                             <button class="portfolio-btn" onclick="openLightbox(this)"><i class="fas fa-expand"></i> Ver Detalle</button>
                         </div>
                     </div>
                 </div>
                 <div class="portfolio-item" data-category="acabado">
-                    <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&h=400&fit=crop" alt="Pisos de Mármol">
+                    <img src="../img/Trab/10.PNG" alt="Mesón de granito con doble lavamanos en baño comercial">
                     <div class="portfolio-overlay">
                         <div class="portfolio-info">
                             <span class="portfolio-tag">Acabados</span>
-                            <h3>Pisos de Mármol</h3>
-                            <p>Instalación de pisos de mármol Carrara</p>
-                            <button class="portfolio-btn" onclick="openLightbox(this)">
-                                <i class="fas fa-expand"></i> Ver Detalle
-                            </button>
+                            <h3>Mesón de granito doble lavamanos</h3>
+                            <p>Instalación de mesón de granito con doble lavamanos embutido en baño de uso comercial.</p>
+                            <button class="portfolio-btn" onclick="openLightbox(this)"><i class="fas fa-expand"></i> Ver Detalle</button>
                         </div>
                     </div>
                 </div>
                 <div class="portfolio-item" data-category="reparacion">
-                    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&h=400&fit=crop" alt="Pintura Profesional">
+                    <img src="../img/Trab/11.PNG" alt="Instalación de iluminación en cielo raso de sala-comedor">
                     <div class="portfolio-overlay">
                         <div class="portfolio-info">
                             <span class="portfolio-tag">Reparación</span>
-                            <h3>Pintura Profesional</h3>
-                            <p>Acabado impecable en interiores y exteriores</p>
+                            <h3>Instalación de iluminación</h3>
+                            <p>Instalación y reparación de puntos de luz en cielo raso de sala-comedor residencial de lujo.</p>
+                            <button class="portfolio-btn" onclick="openLightbox(this)"><i class="fas fa-expand"></i> Ver Detalle</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="acabado">
+                    <img src="../img/Trab/12.PNG" alt="Sala con piso de mármol e iluminación LED perimetral">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-info">
+                            <span class="portfolio-tag">Acabados</span>
+                            <h3>Sala con piso de mármol y LED</h3>
+                            <p>Instalación de piso de mármol pulido con iluminación LED perimetral y spots empotrados en sala.</p>
                             <button class="portfolio-btn" onclick="openLightbox(this)">
                                 <i class="fas fa-expand"></i> Ver Detalle
                             </button>
@@ -133,12 +126,12 @@
                     </div>
                 </div>
                 <div class="portfolio-item" data-category="remodelacion">
-                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&h=400&fit=crop" alt="Dormitorio Principal">
+                    <img src="../img/Trab/13.PNG" alt="Habitación moderna con ventanales de aluminio negro y piso brillante">
                     <div class="portfolio-overlay">
                         <div class="portfolio-info">
                             <span class="portfolio-tag">Remodelación</span>
-                            <h3>Dormitorio Principal</h3>
-                            <p>Suite con vestidor y baño privado</p>
+                            <h3>Habitación con ventanales modernos</h3>
+                            <p>Construcción y acabado de habitación con ventanales de aluminio negro y piso cerámico brillante.</p>
                             <button class="portfolio-btn" onclick="openLightbox(this)">
                                 <i class="fas fa-expand"></i> Ver Detalle
                             </button>
@@ -146,38 +139,12 @@
                     </div>
                 </div>
                 <div class="portfolio-item" data-category="acabado">
-                    <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=600&h=400&fit=crop" alt="Cocina Minimalista">
+                    <img src="../img/Trab/14.PNG" alt="Cielo raso con cinta LED y spots empotrados">
                     <div class="portfolio-overlay">
                         <div class="portfolio-info">
                             <span class="portfolio-tag">Acabados</span>
-                            <h3>Cocina Minimalista</h3>
-                            <p>Acabados en mate con iluminación LED</p>
-                            <button class="portfolio-btn" onclick="openLightbox(this)">
-                                <i class="fas fa-expand"></i> Ver Detalle
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="acabado">
-                    <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&h=400&fit=crop" alt="Pisos de Mármol">
-                    <div class="portfolio-overlay">
-                        <div class="portfolio-info">
-                            <span class="portfolio-tag">Acabados</span>
-                            <h3>Pisos de Mármol</h3>
-                            <p>Instalación de pisos de mármol Carrara</p>
-                            <button class="portfolio-btn" onclick="openLightbox(this)">
-                                <i class="fas fa-expand"></i> Ver Detalle
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="reparacion">
-                    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&h=400&fit=crop" alt="Pintura Profesional">
-                    <div class="portfolio-overlay">
-                        <div class="portfolio-info">
-                            <span class="portfolio-tag">Reparación</span>
-                            <h3>Pintura Profesional</h3>
-                            <p>Acabado impecable en interiores y exteriores</p>
+                            <h3>Cielo raso con iluminación LED</h3>
+                            <p>Instalación de cielo raso con cinta LED perimetral y spots empotrados en sala.</p>
                             <button class="portfolio-btn" onclick="openLightbox(this)">
                                 <i class="fas fa-expand"></i> Ver Detalle
                             </button>
@@ -185,12 +152,12 @@
                     </div>
                 </div>
                 <div class="portfolio-item" data-category="remodelacion">
-                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&h=400&fit=crop" alt="Dormitorio Principal">
+                    <img src="../img/Trab/15.PNG" alt="Cocina integral con isla, cabinetes y lámparas colgantes">
                     <div class="portfolio-overlay">
                         <div class="portfolio-info">
                             <span class="portfolio-tag">Remodelación</span>
-                            <h3>Dormitorio Principal</h3>
-                            <p>Suite con vestidor y baño privado</p>
+                            <h3>Cocina integral con isla</h3>
+                            <p>Remodelación completa de cocina con isla, cabinetes, campana extractora y lámparas colgantes decorativas.</p>
                             <button class="portfolio-btn" onclick="openLightbox(this)">
                                 <i class="fas fa-expand"></i> Ver Detalle
                             </button>
@@ -198,38 +165,12 @@
                     </div>
                 </div>
                 <div class="portfolio-item" data-category="acabado">
-                    <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=600&h=400&fit=crop" alt="Cocina Minimalista">
+                    <img src="../img/Trab/16.PNG" alt="Isla de cocina con gabinetes beige y cubierta de cuarzo">
                     <div class="portfolio-overlay">
                         <div class="portfolio-info">
                             <span class="portfolio-tag">Acabados</span>
-                            <h3>Cocina Minimalista</h3>
-                            <p>Acabados en mate con iluminación LED</p>
-                            <button class="portfolio-btn" onclick="openLightbox(this)">
-                                <i class="fas fa-expand"></i> Ver Detalle
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="acabado">
-                    <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&h=400&fit=crop" alt="Pisos de Mármol">
-                    <div class="portfolio-overlay">
-                        <div class="portfolio-info">
-                            <span class="portfolio-tag">Acabados</span>
-                            <h3>Pisos de Mármol</h3>
-                            <p>Instalación de pisos de mármol Carrara</p>
-                            <button class="portfolio-btn" onclick="openLightbox(this)">
-                                <i class="fas fa-expand"></i> Ver Detalle
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="reparacion">
-                    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&h=400&fit=crop" alt="Pintura Profesional">
-                    <div class="portfolio-overlay">
-                        <div class="portfolio-info">
-                            <span class="portfolio-tag">Reparación</span>
-                            <h3>Pintura Profesional</h3>
-                            <p>Acabado impecable en interiores y exteriores</p>
+                            <h3>Isla de cocina con gabinetes</h3>
+                            <p>Fabricación e instalación de isla con gabinetes en tono beige y cubierta de cuarzo en cocina abierta.</p>
                             <button class="portfolio-btn" onclick="openLightbox(this)">
                                 <i class="fas fa-expand"></i> Ver Detalle
                             </button>
@@ -237,51 +178,12 @@
                     </div>
                 </div>
                 <div class="portfolio-item" data-category="remodelacion">
-                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&h=400&fit=crop" alt="Dormitorio Principal">
+                    <img src="../img/Trab/17.PNG" alt="Cocina con gabinetes, estufa, horno y campana extractora">
                     <div class="portfolio-overlay">
                         <div class="portfolio-info">
                             <span class="portfolio-tag">Remodelación</span>
-                            <h3>Dormitorio Principal</h3>
-                            <p>Suite con vestidor y baño privado</p>
-                            <button class="portfolio-btn" onclick="openLightbox(this)">
-                                <i class="fas fa-expand"></i> Ver Detalle
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="acabado">
-                    <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=600&h=400&fit=crop" alt="Cocina Minimalista">
-                    <div class="portfolio-overlay">
-                        <div class="portfolio-info">
-                            <span class="portfolio-tag">Acabados</span>
-                            <h3>Cocina Minimalista</h3>
-                            <p>Acabados en mate con iluminación LED</p>
-                            <button class="portfolio-btn" onclick="openLightbox(this)">
-                                <i class="fas fa-expand"></i> Ver Detalle
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="acabado">
-                    <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&h=400&fit=crop" alt="Pisos de Mármol">
-                    <div class="portfolio-overlay">
-                        <div class="portfolio-info">
-                            <span class="portfolio-tag">Acabados</span>
-                            <h3>Pisos de Mármol</h3>
-                            <p>Instalación de pisos de mármol Carrara</p>
-                            <button class="portfolio-btn" onclick="openLightbox(this)">
-                                <i class="fas fa-expand"></i> Ver Detalle
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="reparacion">
-                    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&h=400&fit=crop" alt="Pintura Profesional">
-                    <div class="portfolio-overlay">
-                        <div class="portfolio-info">
-                            <span class="portfolio-tag">Reparación</span>
-                            <h3>Pintura Profesional</h3>
-                            <p>Acabado impecable en interiores y exteriores</p>
+                            <h3>Cocina con estufa y horno</h3>
+                            <p>Instalación de cocina completa con gabinetes, estufa empotrada, horno y campana extractora.</p>
                             <button class="portfolio-btn" onclick="openLightbox(this)">
                                 <i class="fas fa-expand"></i> Ver Detalle
                             </button>
@@ -289,12 +191,12 @@
                     </div>
                 </div>
                 <div class="portfolio-item" data-category="remodelacion">
-                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&h=400&fit=crop" alt="Dormitorio Principal">
+                    <img src="../img/Trab/18.PNG" alt="Sala con piso tipo madera y paredes en proceso de acabado">
                     <div class="portfolio-overlay">
                         <div class="portfolio-info">
                             <span class="portfolio-tag">Remodelación</span>
-                            <h3>Dormitorio Principal</h3>
-                            <p>Suite con vestidor y baño privado</p>
+                            <h3>Sala con piso tipo madera</h3>
+                            <p>Instalación de piso tipo madera y preparación de paredes con sistema de aire acondicionado en sala.</p>
                             <button class="portfolio-btn" onclick="openLightbox(this)">
                                 <i class="fas fa-expand"></i> Ver Detalle
                             </button>
@@ -302,12 +204,38 @@
                     </div>
                 </div>
                 <div class="portfolio-item" data-category="acabado">
-                    <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=600&h=400&fit=crop" alt="Cocina Minimalista">
+                    <img src="../img/Trab/19.PNG" alt="Vanity de baño con lavamanos y cubierta de mármol">
                     <div class="portfolio-overlay">
                         <div class="portfolio-info">
                             <span class="portfolio-tag">Acabados</span>
-                            <h3>Cocina Minimalista</h3>
-                            <p>Acabados en mate con iluminación LED</p>
+                            <h3>Vanity de baño con mármol</h3>
+                            <p>Instalación de mueble de baño con lavamanos sobrepuesto, cubierta de mármol y gabinete en madera oscura.</p>
+                            <button class="portfolio-btn" onclick="openLightbox(this)">
+                                <i class="fas fa-expand"></i> Ver Detalle
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="reparacion">
+                    <img src="../img/Trab/20.PNG" alt="Pintura y mantenimiento de techo metálico">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-info">
+                            <span class="portfolio-tag">Reparación</span>
+                            <h3>Mantenimiento de techo metálico</h3>
+                            <p>Aplicación de pintura anticorrosiva en techo de láminas metálicas para protección y durabilidad.</p>
+                            <button class="portfolio-btn" onclick="openLightbox(this)">
+                                <i class="fas fa-expand"></i> Ver Detalle
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="reparacion">
+                    <img src="../img/Trab/21.PNG" alt="Pintura decorativa con franjas azul y blanco en apartamento">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-info">
+                            <span class="portfolio-tag">Reparación</span>
+                            <h3>Pintura decorativa con franjas</h3>
+                            <p>Aplicación de pintura decorativa con diseño de franjas azul y blanco en habitación de apartamento de altura.</p>
                             <button class="portfolio-btn" onclick="openLightbox(this)">
                                 <i class="fas fa-expand"></i> Ver Detalle
                             </button>

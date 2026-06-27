@@ -12,11 +12,13 @@
 </head>
 <body>
 
-    <!-- Navegación -->
+    <!-- ============================================
+    NAVEGACIÓN
+    ============================================ -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a href="#inicio" class="logo">
-                <i class="fas fa-hard-hat"></i>
+                <img src="icon.jpeg" alt="Contratista y Acabado" class="logo-img">
                 <span>Contratista y Acabado</span>
             </a>
             <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
@@ -34,7 +36,9 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- ============================================
+    HERO SECTION
+    ============================================ -->
     <section class="hero" id="inicio">
         <div class="hero-overlay"></div>
         <div class="hero-content">
@@ -69,7 +73,9 @@
         </div>
     </section>
 
-    <!-- Estadísticas -->
+    <!-- ============================================
+    ESTADÍSTICAS
+    ============================================ -->
     <section class="stats-section">
         <div class="stats-container">
             <div class="stat-item" data-count="250">
@@ -95,7 +101,9 @@
         </div>
     </section>
 
-    <!-- Servicios -->
+    <!-- ============================================
+    SERVICIOS
+    ============================================ -->
     <section class="services" id="servicios">
         <div class="container">
             <div class="section-header">
@@ -156,13 +164,15 @@
         </div>
     </section>
 
-    <!-- Trabajos Realizados -->
+    <!-- ============================================
+    PORTAFOLIO
+    ============================================ -->
     <section class="portfolio" id="trabajos">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Portafolio</span>
                 <h2 class="section-title">Trabajos Realizados</h2>
-                <p class="section-desc">Resultados que hablan por sí solos</p>
+                <p class="section-desc">Resultados que hablan por sí solos. Visita la página de portafolio para ver más trabajos.</p>
             </div>
             <div class="portfolio-filter">
                 <button class="filter-btn active" data-filter="all">Todos</button>
@@ -171,6 +181,7 @@
                 <button class="filter-btn" data-filter="acabado">Acabados</button>
             </div>
             <div class="portfolio-grid">
+                <!-- ====== ITEM 1 ====== -->
                 <div class="portfolio-item" data-category="remodelacion">
                     <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=400&fit=crop" alt="Remodelación de Cocina">
                     <div class="portfolio-overlay">
@@ -184,19 +195,23 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- ====== ITEM 2 ====== -->
                 <div class="portfolio-item" data-category="acabado">
                     <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=600&h=400&fit=crop" alt="Baño de Lujo">
                     <div class="portfolio-overlay">
                         <div class="portfolio-info">
                             <span class="portfolio-tag">Acabados</span>
                             <h3>Baño de Lujo</h3>
-                            <p>Mármol italiano y grifería de diseño</p>
+                            <p>Mármol italiano y grifería de diseño premium</p>
                             <button class="portfolio-btn" onclick="openLightbox(this)">
                                 <i class="fas fa-expand"></i> Ver Detalle
                             </button>
                         </div>
                     </div>
                 </div>
+
+                <!-- ====== ITEM 3 ====== -->
                 <div class="portfolio-item" data-category="reparacion">
                     <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&h=400&fit=crop" alt="Reparación Estructural">
                     <div class="portfolio-overlay">
@@ -210,6 +225,8 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- ====== ITEM 4 ====== -->
                 <div class="portfolio-item" data-category="remodelacion">
                     <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop" alt="Sala Remodelada">
                     <div class="portfolio-overlay">
@@ -223,63 +240,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="portfolio-item" data-category="acabado">
-                    <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&h=400&fit=crop" alt="Pisos de Mármol">
-                    <div class="portfolio-overlay">
-                        <div class="portfolio-info">
-                            <span class="portfolio-tag">Acabados</span>
-                            <h3>Pisos de Mármol</h3>
-                            <p>Instalación de pisos de mármol Carrara</p>
-                            <button class="portfolio-btn" onclick="openLightbox(this)">
-                                <i class="fas fa-expand"></i> Ver Detalle
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="reparacion">
-                    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=600&h=400&fit=crop" alt="Pintura Profesional">
-                    <div class="portfolio-overlay">
-                        <div class="portfolio-info">
-                            <span class="portfolio-tag">Reparación</span>
-                            <h3>Pintura Profesional</h3>
-                            <p>Acabado impecable en interiores y exteriores</p>
-                            <button class="portfolio-btn" onclick="openLightbox(this)">
-                                <i class="fas fa-expand"></i> Ver Detalle
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="remodelacion">
-                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&h=400&fit=crop" alt="Dormitorio Principal">
-                    <div class="portfolio-overlay">
-                        <div class="portfolio-info">
-                            <span class="portfolio-tag">Remodelación</span>
-                            <h3>Dormitorio Principal</h3>
-                            <p>Suite con vestidor y baño privado</p>
-                            <button class="portfolio-btn" onclick="openLightbox(this)">
-                                <i class="fas fa-expand"></i> Ver Detalle
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="acabado">
-                    <img src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=600&h=400&fit=crop" alt="Cocina Minimalista">
-                    <div class="portfolio-overlay">
-                        <div class="portfolio-info">
-                            <span class="portfolio-tag">Acabados</span>
-                            <h3>Cocina Minimalista</h3>
-                            <p>Acabados en mate con iluminación LED</p>
-                            <button class="portfolio-btn" onclick="openLightbox(this)">
-                                <i class="fas fa-expand"></i> Ver Detalle
-                            </button>
-                        </div>
-                    </div>
-                </div>
+            </div>
+            <div class="portfolio-more">
+                <a href="portfolio.html" class="btn btn-primary">Ver más trabajos</a>
             </div>
         </div>
     </section>
 
-    <!-- Nosotros -->
+    <!-- ============================================
+    NOSOTROS
+    ============================================ -->
     <section class="about" id="nosotros">
         <div class="container">
             <div class="about-grid">
@@ -328,84 +298,10 @@
         </div>
     </section>
 
-    <!-- Testimonios -->
-    <section class="testimonials">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Testimonios</span>
-                <h2 class="section-title">Lo que dicen nuestros clientes</h2>
-            </div>
-            <div class="testimonials-slider">
-                <div class="testimonial-card active">
-                    <div class="testimonial-stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">
-                        "Excelente trabajo en la remodelación de mi cocina. Quedó exactamente como la soñé. 
-                        El equipo fue muy profesional y respetuoso. ¡Totalmente recomendados!"
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">MR</div>
-                        <div class="author-info">
-                            <h4>María Rodríguez</h4>
-                            <span>Remodelación de Cocina</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">
-                        "Contraté para reparar una filtración y terminaron haciendo todo el baño nuevo. 
-                        El acabado en mármol quedó espectacular. Precios justos y trabajo impecable."
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">CG</div>
-                        <div class="author-info">
-                            <h4>Carlos Gómez</h4>
-                            <span>Reparación y Baño Nuevo</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <p class="testimonial-text">
-                        "Muy satisfecho con la remodelación de mi oficina. Cumplieron con los tiempos 
-                        y el presupuesto acordado. El diseño interior superó mis expectativas."
-                    </p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">LP</div>
-                        <div class="author-info">
-                            <h4>Laura Pérez</h4>
-                            <span>Remodelación de Oficina</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial-dots">
-                <span class="dot active" data-index="0"></span>
-                <span class="dot" data-index="1"></span>
-                <span class="dot" data-index="2"></span>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contacto / WhatsApp -->
+    
+    <!-- ============================================
+    CONTACTO / WHATSAPP
+    ============================================ -->
     <section class="contact" id="contacto">
         <div class="container">
             <div class="contact-wrapper">
@@ -418,40 +314,47 @@
                     </p>
                     
                     <div class="contact-details">
+                        <!-- WhatsApp -->
                         <div class="contact-item">
                             <div class="contact-icon">
                                 <i class="fab fa-whatsapp"></i>
                             </div>
                             <div class="contact-text">
                                 <span>WhatsApp</span>
-                                <a href="https://wa.me/1234567890?text=Hola%2C%20estoy%20interesado%20en%20un%20presupuesto%20para%20mi%20proyecto" target="_blank">+1 (234) 567-890</a>
+                                <a href="https://wa.me/50764241226?text=Hola%2C%20estoy%20interesado%20en%20un%20presupuesto%20para%20mi%20proyecto" target="_blank">+507 6424-1226</a>
                             </div>
                         </div>
+                        <!-- Teléfono -->
                         <div class="contact-item">
                             <div class="contact-icon">
                                 <i class="fas fa-phone"></i>
                             </div>
                             <div class="contact-text">
                                 <span>Teléfono</span>
-                                <a href="tel:+1234567890">+1 (234) 567-890</a>
+                                <a href="tel:+50761951432">+507 6424-1226</a>
                             </div>
                         </div>
+                        <!-- Email (con copia al portapapeles) -->
                         <div class="contact-item">
                             <div class="contact-icon">
                                 <i class="fas fa-envelope"></i>
                             </div>
                             <div class="contact-text">
                                 <span>Email</span>
-                                <a href="mailto:info@contratistayacabado.com">info@contratistayacabado.com</a>
+                                <span class="email-copy" onclick="copiarCorreo()">
+                                    coronadojmjc128@gmail.com
+                                </span>
+                                <span class="copy-tooltip">Copiar</span>
                             </div>
                         </div>
+                        <!-- Ubicación -->
                         <div class="contact-item">
                             <div class="contact-icon">
                                 <i class="fas fa-map-marker-alt"></i>
                             </div>
                             <div class="contact-text">
                                 <span>Ubicación</span>
-                                <span>Ciudad, País</span>
+                                <span>Panamá, Panamá</span>
                             </div>
                         </div>
                     </div>
@@ -471,7 +374,7 @@
                         </div>
                         <h3>¡Cotiza Gratis por WhatsApp!</h3>
                         <p>Responde en menos de 30 minutos. Sin compromiso.</p>
-                        <a href="https://wa.me/1234567890?text=Hola%2C%20estoy%20interesado%20en%20un%20presupuesto%20para%20mi%20proyecto" 
+                        <a href="https://wa.me/50764241226?text=Hola%2C%20estoy%20interesado%20en%20un%20presupuesto%20para%20mi%20proyecto" 
                            target="_blank" 
                            class="btn btn-whatsapp">
                             <i class="fab fa-whatsapp"></i>
@@ -488,13 +391,15 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- ============================================
+    FOOTER
+    ============================================ -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <a href="#inicio" class="footer-logo">
-                        <i class="fas fa-hard-hat"></i>
+                     <a href="#inicio" class="footer-logo">
+                    <img src="img/icon.jpeg" alt="Contratista y Acabado" class="logo-img">
                         <span>Contratista y Acabado</span>
                     </a>
                     <p>Transformando espacios con calidad, profesionalismo y pasión desde hace más de una década.</p>
@@ -534,7 +439,9 @@
         </div>
     </footer>
 
-    <!-- Lightbox -->
+    <!-- ============================================
+    LIGHTBOX
+    ============================================ -->
     <div class="lightbox" id="lightbox">
         <button class="lightbox-close" onclick="closeLightbox()">
             <i class="fas fa-times"></i>
@@ -543,8 +450,10 @@
         <div class="lightbox-caption" id="lightboxCaption"></div>
     </div>
 
-    <!-- WhatsApp Flotante -->
-    <a href="https://wa.me/1234567890?text=Hola%2C%20estoy%20interesado%20en%20un%20presupuesto%20para%20mi%20proyecto" 
+    <!-- ============================================
+    WHATSAPP FLOTANTE
+    ============================================ -->
+    <a href="https://wa.me/50764241226?text=Hola%2C%20estoy%20interesado%20en%20un%20presupuesto%20para%20mi%20proyecto" 
        target="_blank" 
        class="whatsapp-float" 
        aria-label="Contactar por WhatsApp">
@@ -552,6 +461,6 @@
         <span class="whatsapp-tooltip">¡Escríbenos!</span>
     </a>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

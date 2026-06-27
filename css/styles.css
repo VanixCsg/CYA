@@ -28,7 +28,7 @@
 
 html {
     scroll-behavior: smooth;
-    font-size: 16px;
+    font-size: 17px;
 }
 
 body {
@@ -40,7 +40,7 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -690,19 +690,24 @@ body {
 
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 36px;
+    align-items: stretch;
 }
 
 .portfolio-item {
     position: relative;
-    border-radius: 16px;
+    border-radius: 28px;
     overflow: hidden;
     aspect-ratio: 4/3;
+    min-height: 340px;
     cursor: pointer;
     opacity: 0;
-    transform: scale(0.9);
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: scale(0.95);
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.5s ease, opacity 0.5s ease;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 20px 42px rgba(0, 0, 0, 0.18);
 }
 
 .portfolio-item.visible {
@@ -722,7 +727,12 @@ body {
 }
 
 .portfolio-item:hover img {
-    transform: scale(1.15);
+    transform: scale(1.12);
+}
+
+.portfolio-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
 }
 
 .portfolio-overlay {
@@ -731,12 +741,17 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, rgba(26, 26, 26, 0.95) 0%, rgba(26, 26, 26, 0.4) 50%, transparent 100%);
+    background: linear-gradient(to top, rgba(26, 26, 26, 0.94) 0%, rgba(26, 26, 26, 0.35) 45%, transparent 100%);
     display: flex;
     align-items: flex-end;
-    padding: 25px;
+    padding: 28px;
     opacity: 0;
-    transition: opacity 0.4s ease;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .portfolio-item:hover .portfolio-overlay {
@@ -744,12 +759,15 @@ body {
 }
 
 .portfolio-info {
-    transform: translateY(20px);
-    transition: transform 0.4s ease;
+    transform: translateY(12px);
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    opacity: 0.9;
+    max-width: 75%;
 }
 
 .portfolio-item:hover .portfolio-info {
     transform: translateY(0);
+    opacity: 1;
 }
 
 .portfolio-tag {
@@ -795,6 +813,16 @@ body {
     background: var(--accent);
     color: var(--jet-black);
     border-color: var(--accent);
+}
+
+.portfolio-more {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.portfolio-more .btn {
+    padding: 16px 32px;
 }
 
 /* ============================================
@@ -897,108 +925,6 @@ body {
 .feature i {
     color: var(--accent);
     font-size: 1.1rem;
-}
-
-/* ============================================
-   TESTIMONIOS
-   ============================================ */
-.testimonials {
-    padding: 100px 0;
-    background: var(--onyx);
-}
-
-.testimonials-slider {
-    position: relative;
-    max-width: 800px;
-    margin: 0 auto;
-    min-height: 280px;
-}
-
-.testimonial-card {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: var(--graphite);
-    border-radius: 20px;
-    padding: 40px;
-    opacity: 0;
-    transform: translateX(50px);
-    transition: all 0.6s ease;
-    pointer-events: none;
-}
-
-.testimonial-card.active {
-    opacity: 1;
-    transform: translateX(0);
-    pointer-events: all;
-}
-
-.testimonial-stars {
-    color: var(--accent);
-    font-size: 1rem;
-    margin-bottom: 20px;
-    display: flex;
-    gap: 4px;
-}
-
-.testimonial-text {
-    font-size: 1.1rem;
-    color: var(--platinum);
-    line-height: 1.8;
-    font-style: italic;
-    margin-bottom: 30px;
-}
-
-.testimonial-author {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.author-avatar {
-    width: 50px;
-    height: 50px;
-    background: var(--accent);
-    color: var(--jet-black);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-    font-size: 1rem;
-}
-
-.author-info h4 {
-    color: var(--white);
-    font-size: 1rem;
-    margin-bottom: 3px;
-}
-
-.author-info span {
-    color: var(--ash);
-    font-size: 0.85rem;
-}
-
-.testimonial-dots {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 30px;
-}
-
-.dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.2);
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.dot.active {
-    background: var(--accent);
-    transform: scale(1.2);
 }
 
 /* ============================================
@@ -1125,6 +1051,182 @@ body {
     background: var(--accent);
     color: var(--jet-black);
     transform: translateY(-3px);
+}
+
+/* ============================================
+   SUBIR IMÁGENES
+   ============================================ */
+.upload-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, rgba(34, 37, 38, 0.98), rgba(53, 58, 62, 0.98));
+    position: relative;
+}
+
+.upload-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 28px;
+    padding: 40px;
+}
+
+.upload-info h3 {
+    margin-bottom: 18px;
+    color: var(--white);
+    font-size: 1.75rem;
+}
+
+.upload-info p {
+    color: var(--ash);
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.upload-destination {
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.upload-benefits {
+    list-style: none;
+    display: grid;
+    gap: 15px;
+}
+
+.upload-benefits li {
+    color: var(--platinum);
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.upload-benefits i {
+    color: var(--accent);
+    min-width: 24px;
+}
+
+.upload-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.upload-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 24px;
+    background: var(--accent);
+    color: var(--jet-black);
+    border-radius: 16px;
+    cursor: pointer;
+    font-weight: 700;
+    width: fit-content;
+}
+
+.upload-label i {
+    font-size: 1.1rem;
+}
+
+.logo-img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.upload-info h3 {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+    color: var(--white);
+    font-size: 1.75rem;
+}
+
+.upload-info h3 i {
+    color: var(--accent);
+}
+
+.upload-form input[type="file"] {
+    display: none;
+}
+
+.upload-preview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 24px;
+    min-height: 320px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+}
+
+.preview-item {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 18px;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    min-height: 220px;
+}
+
+.preview-item img {
+    width: 100%;
+    border-radius: 14px;
+    object-fit: cover;
+    aspect-ratio: 4 / 3;
+}
+
+.preview-item span {
+    color: var(--white);
+    font-size: 0.95rem;
+    text-align: center;
+    word-break: break-word;
+}
+
+.preview-remove {
+    background: rgba(255, 255, 255, 0.08);
+    border: none;
+    color: var(--white);
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upload-empty {
+    color: var(--ash);
+    font-size: 1rem;
+}
+
+@media (max-width: 1024px) {
+    .upload-card {
+        grid-template-columns: 1fr;
+    }
+
+    .upload-preview {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* CTA Card */
@@ -1435,7 +1537,7 @@ body {
     }
     
     .portfolio-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
     
     .about-grid,
@@ -1547,4 +1649,199 @@ body {
         bottom: 20px;
         right: 20px;
     }
+}
+/* ============================================
+   PORTAFOLIO - ANTES & DESPUÉS
+   ============================================ */
+.portfolio-before-after {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px;
+    width: 100%;
+    height: 100%;
+    min-height: 320px;
+}
+
+.portfolio-image-wrapper {
+    position: relative;
+    overflow: hidden;
+    background: var(--onyx);
+    min-height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    min-height: 280px;
+}
+
+.portfolio-item:hover .portfolio-image-wrapper img {
+    transform: scale(1.08);
+}
+
+.ba-label {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    padding: 6px 16px;
+    border-radius: 8px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    z-index: 5;
+    backdrop-filter: blur(8px);
+}
+
+.ba-label.antes {
+    background: rgba(220, 50, 50, 0.85);
+    color: #fff;
+}
+
+.ba-label.despues {
+    background: rgba(37, 211, 102, 0.85);
+    color: #fff;
+}
+
+/* ====== PORTFOLIO ITEM - TAMAÑO AMPLIO ====== */
+.portfolio-item {
+    position: relative;
+    border-radius: 28px;
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
+    min-height: 340px;
+    cursor: pointer;
+    opacity: 0;
+    transform: scale(0.96);
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), 
+                box-shadow 0.5s ease, 
+                opacity 0.5s ease;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 20px 42px rgba(0, 0, 0, 0.18);
+    width: 100%;
+}
+
+.portfolio-item.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.portfolio-item.hidden {
+    display: none;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+}
+
+/* ====== GRID MÁS AMPLIO ====== */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    align-items: stretch;
+}
+
+.portfolio-grid-full {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 1024px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    .portfolio-grid-full {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+    .portfolio-grid-full {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+    .portfolio-before-after {
+        grid-template-columns: 1fr 1fr;
+        min-height: 200px;
+    }
+    .portfolio-image-wrapper {
+        min-height: 180px;
+    }
+    .portfolio-image-wrapper img {
+        min-height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    .portfolio-before-after {
+        grid-template-columns: 1fr 1fr;
+        min-height: 160px;
+    }
+    .portfolio-image-wrapper {
+        min-height: 140px;
+    }
+    .portfolio-image-wrapper img {
+        min-height: 140px;
+    }
+    .ba-label {
+        font-size: 0.6rem;
+        padding: 4px 12px;
+        top: 8px;
+        left: 8px;
+    }
+}
+/* ============================================
+   COPIAR CORREO
+   ============================================ */
+.email-copy {
+    cursor: pointer;
+    color: var(--white);
+    font-weight: 600;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.email-copy:hover {
+    color: var(--accent);
+}
+
+.copy-tooltip {
+    font-size: 0.7rem;
+    color: var(--ash);
+    background: var(--onyx);
+    padding: 4px 12px;
+    border-radius: 6px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.copy-tooltip.show {
+    opacity: 1;
+}
+.footer-logo-img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    border-radius: 8px;
 }
